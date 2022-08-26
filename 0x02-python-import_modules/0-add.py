@@ -1,15 +1,11 @@
 #!/usr/bin/python3
-def add(a,b):
-    """ My addition function
 
-    Agrs:
-        a: frist integer
-        b: second integer
+if __name__ =="__main__":
+    from add_0 import add
 
-    Returns:
-        the return value. a + b
+    a = 1
+    b = 2
 
-    """
-    return (a + b)
+    print ("{} + {} = {}".format(a,b,add(a,b)))
 
-print(add(1,2))
+
