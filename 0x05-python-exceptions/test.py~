@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+
+while True:
+    try:
+        x = int(input("please enter a number: "))
+    except ValueError:
+        print("ops")
