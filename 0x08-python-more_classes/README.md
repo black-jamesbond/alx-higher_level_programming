@@ -5,4 +5,3 @@ i. Class attributes and methods.
 ii. Static methods.
 iii. __str__ and __repr__ methods.
 
-## Mikiyas Bekele
