@@ -1,30 +1,16 @@
-import sys
-
-def safe_print_integer_err(value):
-    """
-    This function prints an integer and returns True if the integer is printed successfully, otherwise
-    it prints an error message and returns False
+class Dog:
     
-    :param value: the value to be printed
-    :return: True or False
-    """
-    try:
-        print("{:d}".format(value))
-        return True
-    except:
-        sys.stderr.write("error")
-        return False
-value = 89
-has_been_print = safe_print_integer_err(value)
-if not has_been_print:
-    print("{} is not an integer".format(value))
+    num_of_dogs = 0
+    def __init__(self, name = "unknown"):
+        self.name = name
+        
+        Dog.num_of_dogs += 1
+        
+    @staticmethod
+    def getNumOfDog():
+        print("there are currently {} dogs".format(Dog.num_of_dogs))
+        
 
-value = -89
-has_been_print = safe_print_integer_err(value)
-if not has_been_print:
-    print("{} is not an integer".format(value))
-
-value = "School"
-has_been_print = safe_print_integer_err(value)
-if not has_been_print:
-    print("{} is not an integer".format(value))
+def main():
+    spots = Dog("spots")
+    doug = Dog("doug") 

@@ -1,25 +1,26 @@
 #!/usr/bin/python3
+# 2-safe_print_list_integers.py
 
-king = [1,2,3,'d',3,4,'r']
+
 def safe_print_list_integers(my_list=[], x=0):
-    """
-    This function prints the first x elements of a list and returns the number of integers successfully
-    printed
-    
-    :param my_list: a list of integers
-    :param x: the number of elements to print, defaults to 0 (optional)
-    :return: The number of integers printed.
+    """Print the first x elements of a list that are integers.
+
+    Args:
+        my_list (list): The list to print elements from.
+        x (int): The number of elements of my_list to print.
+
+    Returns:
+        The number of elements printed.
     """
     times = 0
-    for i in range(x):
+    for i in range(0, x):
         try:
             print ("{:d}".format(my_list[i]), end = "")
             times += 1
         except (ValueError,TypeError):
             continue
-    print("\n")
+    print("")
     return(times)
 
-safe_print_list_integers(king, 5)
 
 
