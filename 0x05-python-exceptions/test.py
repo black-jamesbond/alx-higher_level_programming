@@ -1,6 +1,13 @@
 import sys
 
 def safe_print_integer_err(value):
+    """
+    This function prints an integer and returns True if the integer is printed successfully, otherwise
+    it prints an error message and returns False
+    
+    :param value: the value to be printed
+    :return: True or False
+    """
     try:
         print("{:d}".format(value))
         return True
