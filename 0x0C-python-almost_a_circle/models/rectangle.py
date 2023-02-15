@@ -3,7 +3,7 @@
     contains class Rectangle which implements Base.
 """
 # from curses.textpad import rectangle
-from base import Base
+from models.base import Base
 
 
 class Rectangle(Base):
