@@ -5,6 +5,6 @@ while (process.argv[i] !== undefined) {
 }
 if (i <= 2) {
   console.log('No argument');
-} else{
+} else {
   console.log(process.argv[2]);
 }
